@@ -1,2 +1,2 @@
 ## 🌍 Live Site
-[Visit the deployed site](http://your-bucket-name.s3-website-region.amazonaws.com)
+[Visit the deployed site](https://d11bn5kejii58z.cloudfront.net/)
