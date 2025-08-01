@@ -33,8 +33,10 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          echo "Running aws s3 sync..."
-          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete --cache-control "no-store"
+          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} \
+            --delete \
+            --cache-control "no-store"
+
 
       - name: Invalidate CloudFront cache
         run: |
